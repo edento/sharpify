@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Chords fixer",
+    "description": "This extension will replace any b chords with the corresponding #",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "css": "style.css"
+    },
+    "content_scripts": [{
+        "matches": ["http://www.tab4u.com/tabs/**", "https://tabs.ultimate-guitar.com/**"],
+        "js": ["main.js"]
+    }],
+    "permissions": ["tabs", "storage"]
+
+}
