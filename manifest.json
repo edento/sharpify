@@ -1,10 +1,10 @@
 {
     "manifest_version": 2,
-    "name": "Chords fixer",
+    "name": "Sharpify",
     "description": "This extension will replace any b chords with the corresponding #",
-    "version": "1.0",
+    "version": "1.1",
     "browser_action": {
-        "default_icon": "icon.png",
+        "default_icon": "img/icon.png",
         "default_popup": "popup.html",
         "css": "style.css"
     },
