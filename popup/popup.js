@@ -1,4 +1,5 @@
 var toggle = document.getElementById("isPluginOn");
+var runPlugin = document.getElementById("runPlugin");
 var storage = chrome.storage.local;
 
 toggle.addEventListener("change", function (e) {
@@ -6,7 +7,11 @@ toggle.addEventListener("change", function (e) {
     save_options();
 });
 
+runPlugin.addEventListener('click', run);
+
 restore_options();
+
+function run () {}
 
 function updateIcon(enabled) {
     if (enabled) {
