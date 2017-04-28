@@ -8,6 +8,10 @@
         "default_popup": "popup.html",
         "css": "style.css"
     },
+    "icons": {
+      "38": "img/icon_38.png",
+      "256": "img/icon.png"
+    },
     "content_scripts": [{
         "matches": ["http://www.tab4u.com/tabs/**", "https://tabs.ultimate-guitar.com/**"],
         "js": ["main.js"]
