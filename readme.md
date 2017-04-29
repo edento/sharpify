@@ -45,4 +45,6 @@ https://tabs.ultimate-guitar.com
 
 ![Before-After screenshot](img/screenshot1.png?raw=true "Chords before and after using the extension")
 
+![extention-popup](img/screenshot2.png?raw=true "Chrome extension popup" )
+
 
