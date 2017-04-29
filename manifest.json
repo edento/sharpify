@@ -4,16 +4,18 @@
     "description": "This extension will replace any flat chord with its corresponding sharp chord (E.g Ab -> G#)",
     "version": "1.1",
     "browser_action": {
-        "default_icon": "img/icon.png",
+        "default_icon": "img/icon_256.png",
         "default_popup": "popup/popup.html"
     },
     "icons": {
-      "256": "img/icon.png"
+        "38":"img/icon_38.png",
+        "256": "img/icon_256.png"
     },
     "content_scripts": [{
         "matches": ["http://www.tab4u.com/tabs/**", "https://tabs.ultimate-guitar.com/**"],
         "js": ["main.js"]
     }],
-    "permissions": ["tabs", "storage"]
+    "permissions": ["tabs", "storage"],
+    "web_accessible_resources": ["img/*.png"]
 
 }

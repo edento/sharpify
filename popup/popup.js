@@ -24,10 +24,10 @@ restore_options();
 
 function updateIcon(enabled) {
     if (enabled) {
-        chrome.browserAction.setIcon({path: 'img/icon_38.png'});
+        chrome.browserAction.setIcon({path: '../img/icon_38.png'});
     }
     else {
-        chrome.browserAction.setIcon({path: 'img/icon-disabled_38.png'});
+        chrome.browserAction.setIcon({path: '../img/icon-disabled_38.png'});
     }
 }
 
