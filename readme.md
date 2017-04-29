@@ -35,7 +35,7 @@ Open your chrome browser and make sure development mode is turned on:
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Troubleshooting
+### Troubleshooting
 If you encounter any problems running the code, try using chrome FAQ:
 https://developer.chrome.com/extensions/faq#faq-dev-01
 
