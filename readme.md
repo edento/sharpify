@@ -44,7 +44,6 @@ Screenshot of chords were taken from
 https://tabs.ultimate-guitar.com
 
 Extension popup options:
-
 <img src="https://github.com/edento/sharpify/blob/master/img/screenshot2.png?raw=true" width="300">
 
 Example of chords before and after using the extension:
