@@ -1,17 +1,26 @@
 var toggle = document.getElementById("isPluginOn");
 var runPlugin = document.getElementById("runPlugin");
+
 var storage = chrome.storage.local;
 
 toggle.addEventListener("change", function (e) {
-    console.log("toggled: ", toggle.checked);
+    // console.log("toggled: ", toggle.checked);
     save_options();
 });
 
-runPlugin.addEventListener('click', run);
+runPlugin.addEventListener('click', function (e){
+    emitRunScript();
+});
 
+function emitRunScript () {
+    var payload = {};
+    chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
+        chrome.tabs.sendMessage(tabs[0].id, payload, function (response) {
+            console.log(response.farewell);
+        });
+    });
+}
 restore_options();
-
-function run () {}
 
 function updateIcon(enabled) {
     if (enabled) {
@@ -23,15 +32,15 @@ function updateIcon(enabled) {
 }
 
 function save_options() {
-    var obj = {enabled: toggle.checked};
+    var obj = {autoRun: toggle.checked};
     updateIcon(toggle.checked);
     storage.set(obj);
 }
 
 function restore_options() {
-    storage.get('enabled', function (result) {
+    storage.get('autoRun', function (result) {
         console.log(result);
-        toggle.checked = result.enabled;
+        toggle.checked = result.autoRun;
     });
 }
 
