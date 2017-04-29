@@ -43,10 +43,10 @@ https://developer.chrome.com/extensions/faq#faq-dev-01
 Screenshot of chords were taken from 
 https://tabs.ultimate-guitar.com
 
-<b>Extension popup options:</b>
+Extension popup options:
 
 <img src="https://github.com/edento/sharpify/blob/master/img/screenshot2.png?raw=true" width="300">
 
-<b>Example of chords before and after using the extension:</b>
+Example of chords before and after using the extension:
 ![Before-After screenshot](img/screenshot1.png?raw=true "Chords before and after using the extension")
 
