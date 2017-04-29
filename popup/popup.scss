@@ -1,23 +1,42 @@
-$pink:          #d80027;
+$pink: #d80027;
 $pink_disabled: #d4b8bd;
-$black:         #363636;
-$blue:          #2196F3;
+$black: #363636;
+$grey: #807c7c;
+$blue: #2196F3;
+
+$toggle_wd: 44px;
 
 .content {
   width: 300px;
   .line {
     margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: 0;
+
     .option_text {
       vertical-align: middle;
       display: inline-block;
       font-size: 12px;
-      width: calc(100% - 70px);
+      width: calc(100% - #{$toggle_wd});
       color: $black;
     }
     .option_toggle {
       display: inline-block;
-
+      width: $toggle_wd;
+      button {
+        width: 100%;
+        outline: none;
+      }
     }
+    .option_desc {
+      font-size: 9px;
+      color: $grey;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba($grey, 0.2);
+    }
+
   }
 }
 
@@ -26,7 +45,7 @@ $blue:          #2196F3;
 .switch {
   position: relative;
   display: inline-block;
-  width: 44px;
+  width: 100%;
   height: 24px;
   vertical-align: middle;
 }
@@ -60,18 +79,17 @@ $blue:          #2196F3;
   transition: .4s;
 }
 
-input:checked+.slider {
+input:checked + .slider {
   background-color: #2196F3;
 }
 
-input:focus+.slider {
+input:focus + .slider {
   box-shadow: 0 0 1px #2196F3;
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
   transform: translate(20px, 50%);
 }
-
 
 /* Rounded sliders */
 
