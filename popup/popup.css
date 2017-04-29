@@ -1,5 +1,10 @@
 .content {
-  width: 300px; }
+  width: 300px;
+  font-family: 'Arimo', sans-serif; }
+  .content .title {
+    font-size: 20px;
+    margin: 5px 0;
+    font-weight: 300; }
   .content .line {
     margin-bottom: 5px;
     padding-bottom: 5px;

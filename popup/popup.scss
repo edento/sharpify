@@ -8,6 +8,13 @@ $toggle_wd: 44px;
 
 .content {
   width: 300px;
+  font-family: 'Arimo', sans-serif;
+
+  .title {
+    font-size: 20px;
+    margin: 5px 0;
+    font-weight: 300;
+  }
   .line {
     margin-bottom: 5px;
     padding-bottom: 5px;
