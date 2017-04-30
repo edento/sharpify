@@ -57,8 +57,9 @@ https://tabs.ultimate-guitar.com
 
 Extension popup options:
 
-<img src="https://github.com/edento/sharpify/blob/master/img/screenshot3.png?raw=true" width="300">
+<img src="https://github.com/edento/sharpify/blob/master/img/screenshots/popup_enabled.png?raw=true" width="300">
+<img src="https://github.com/edento/sharpify/blob/master/img/screenshots/popup_disabled.png?raw=true" width="300">
 
 Example of chords before and after using the extension:
-![Before-After screenshot](img/screenshot1.png?raw=true "Chords before and after using the extension")
+![Before-After screenshot](img/screenshots/screenshot1.png?raw=true "Chords before and after using the extension")
 
