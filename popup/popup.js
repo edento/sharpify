@@ -1,10 +1,8 @@
 var toggle = document.getElementById("isPluginOn");
 var runPlugin = document.getElementById("runPlugin");
-
 var storage = chrome.storage.local;
 
 toggle.addEventListener("change", function (e) {
-    // console.log("toggled: ", toggle.checked);
     save_options();
 });
 
@@ -20,7 +18,6 @@ function emitRunScript () {
         });
     });
 }
-restore_options();
 
 function updateIcon(enabled) {
     if (enabled) {
@@ -39,11 +36,9 @@ function save_options() {
 
 function restore_options() {
     storage.get('autoRun', function (result) {
-        console.log(result);
         toggle.checked = result.autoRun;
+        updateIcon(toggle.checked);
     });
 }
 
-
-// document.addEventListener('DOMContentLoaded', restore_options);
-// document.getElementById('save').addEventListener('click', save_options);
+restore_options();
