@@ -17,13 +17,24 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installation
 
-Clone this project and navigate to the main folder
+1. Clone this project and navigate to the main folder
 ```
 git clone https://github.com/edento/sharpify.git
 ```
 ```
 cd sharpify
 ```
+
+Follow steps 2+3 if you want to <b> edit the design using scss instead of css:</b> (otherwise, skip to 'Running in browser')
+
+2. Install sass
+Follow the instructions in order to install sass on your machine:
+http://sass-lang.com/install
+ 
+Note: this step is required only if you wan't to change the scss file. It is not necessary for running the project without changes.
+
+``sass --watch popup/popup.scss:popup/popup.css --sourcemap=none
+``
 
 ### Running in chrome
 
