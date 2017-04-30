@@ -34,6 +34,26 @@ function script(manual) {
         } else {
             return;
         }
+
+        if (manual){
+            var body = document.getElementsByTagName('body')[0];
+            var loader = document.createElement('div');
+            loader.className = 'sharpify-loader';
+
+            var icon = document.createElement('img');
+            icon.src = chrome.extension.getURL('img/icon_256.png');
+
+
+            var style = document.createElement('style');
+            style.type = 'text/css';
+            style.innerHTML = '.sharpify-loader { height: 100%; width: 100%; background: hsla(0, 0%, 100%, 0.5); position: fixed; top: 0; z-index: 1000000; }';
+
+            loader.appendChild(style);
+            loader.appendChild(icon);
+            body.append(loader, null);
+
+        }
+
         var replaced = 0;
         var spans = document.querySelectorAll(selector);
         var CHORDS = {
