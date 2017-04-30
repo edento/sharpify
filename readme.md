@@ -33,7 +33,8 @@ http://sass-lang.com/install
  
 Note: this step is required only if you wan't to change the scss file. It is not necessary for running the project without changes.
 
-``sass --watch popup/popup.scss:popup/popup.css --sourcemap=none
+``
+sass --watch popup/popup.scss:popup/popup.css --sourcemap=none
 ``
 
 ### Running in chrome
@@ -56,7 +57,7 @@ https://tabs.ultimate-guitar.com
 
 Extension popup options:
 
-<img src="https://github.com/edento/sharpify/blob/master/img/screenshot2.png?raw=true" width="300">
+<img src="https://github.com/edento/sharpify/blob/master/img/screenshot3.png?raw=true" width="300">
 
 Example of chords before and after using the extension:
 ![Before-After screenshot](img/screenshot1.png?raw=true "Chords before and after using the extension")
