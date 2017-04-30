@@ -40,17 +40,20 @@ $toggle_wd: 44px;
 
     &:not(:last-child) {
       border-bottom: 1px solid rgba($grey, 0.2);
-      margin-bottom: 5px;
+      margin: 0 0 5px 0;
       padding-bottom: 5px;
-
     }
 
     &.github {
+      margin: 10px 0 0 0;
+      clear: both;
       a {
         font-size: 12px;
         line-height: 12px;
         text-decoration: none;
         display: inline-block;
+        float: right;
+        padding: 5px;
 
         &:visited {
           color: $black;
@@ -67,6 +70,10 @@ $toggle_wd: 44px;
           display: inline-block;
           background-size: contain;
           vertical-align: middle;
+        }
+
+        &:after {
+          clear: both;
         }
       }
       &:hover {

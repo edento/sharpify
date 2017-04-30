@@ -24,28 +24,35 @@
       color: #807c7c; }
     .content .line:not(:last-child) {
       border-bottom: 1px solid rgba(128, 124, 124, 0.2);
-      margin-bottom: 5px;
+      margin: 0 0 5px 0;
       padding-bottom: 5px; }
-    .content .line.github a {
-      font-size: 12px;
-      line-height: 12px;
-      text-decoration: none;
-      display: inline-block; }
-      .content .line.github a:visited {
-        color: #363636; }
-      .content .line.github a:before {
-        content: "";
-        width: 15px;
-        height: 15px;
-        background-image: url(../img/github-icon.png);
-        background-position: center center;
-        background-repeat: no-repeat;
-        margin-right: 5px;
+    .content .line.github {
+      margin: 10px 0 0 0;
+      clear: both; }
+      .content .line.github a {
+        font-size: 12px;
+        line-height: 12px;
+        text-decoration: none;
         display: inline-block;
-        background-size: contain;
-        vertical-align: middle; }
-    .content .line.github:hover a {
-      color: #d80027; }
+        float: right;
+        padding: 5px; }
+        .content .line.github a:visited {
+          color: #363636; }
+        .content .line.github a:before {
+          content: "";
+          width: 15px;
+          height: 15px;
+          background-image: url(../img/github-icon.png);
+          background-position: center center;
+          background-repeat: no-repeat;
+          margin-right: 5px;
+          display: inline-block;
+          background-size: contain;
+          vertical-align: middle; }
+        .content .line.github a:after {
+          clear: both; }
+      .content .line.github:hover a {
+        color: #d80027; }
 
 /* The switch - the box around the slider */
 .switch {
