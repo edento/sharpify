@@ -16,8 +16,6 @@ $toggle_wd: 44px;
     font-weight: 300;
   }
   .line {
-    margin-bottom: 5px;
-    padding-bottom: 5px;
     font-size: 0;
 
     .option_text {
@@ -42,8 +40,39 @@ $toggle_wd: 44px;
 
     &:not(:last-child) {
       border-bottom: 1px solid rgba($grey, 0.2);
+      margin-bottom: 5px;
+      padding-bottom: 5px;
+
     }
 
+    &.github {
+      a {
+        font-size: 12px;
+        line-height: 12px;
+        text-decoration: none;
+        display: inline-block;
+
+        &:visited {
+          color: $black;
+        }
+
+        &:before {
+          content: "";
+          width: 15px;
+          height: 15px;
+          background-image: url(../img/github-icon.png);
+          background-position: center center;
+          background-repeat: no-repeat;
+          margin-right: 5px;
+          display: inline-block;
+          background-size: contain;
+          vertical-align: middle;
+        }
+      }
+      &:hover {
+        a { color: $pink; }
+      }
+    }
   }
 }
 

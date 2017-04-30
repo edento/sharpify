@@ -6,8 +6,6 @@
     margin: 5px 0;
     font-weight: 300; }
   .content .line {
-    margin-bottom: 5px;
-    padding-bottom: 5px;
     font-size: 0; }
     .content .line .option_text {
       vertical-align: middle;
@@ -25,7 +23,29 @@
       font-size: 9px;
       color: #807c7c; }
     .content .line:not(:last-child) {
-      border-bottom: 1px solid rgba(128, 124, 124, 0.2); }
+      border-bottom: 1px solid rgba(128, 124, 124, 0.2);
+      margin-bottom: 5px;
+      padding-bottom: 5px; }
+    .content .line.github a {
+      font-size: 12px;
+      line-height: 12px;
+      text-decoration: none;
+      display: inline-block; }
+      .content .line.github a:visited {
+        color: #363636; }
+      .content .line.github a:before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-image: url(../img/github-icon.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin-right: 5px;
+        display: inline-block;
+        background-size: contain;
+        vertical-align: middle; }
+    .content .line.github:hover a {
+      color: #d80027; }
 
 /* The switch - the box around the slider */
 .switch {
